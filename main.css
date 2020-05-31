@@ -2,14 +2,14 @@
 html, body {
     font-family: "Monument Extended", Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0em;
-    height: 100%;
-    width: 100%;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
     border: none;
     background-color: black;
-    
-    
-         
+    box-sizing: border-box;
+        
 }
 
 header {
@@ -90,7 +90,7 @@ header h1 {
 
 .container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     font-weight: lighter;
     text-align: justify;
     box-sizing: border-box;
@@ -107,6 +107,7 @@ header h1 {
 
 .dark{
     background-color: black;
+    color: #eee2e2e1;
 }
 
 
@@ -144,7 +145,7 @@ header h1 {
     margin-bottom: 30px;
     border-radius: 5px;
     border-radius: 56% 44% 25% 75% / 53% 25% 75% 47%     ;
-    filter: grayscale(60%);
+    filter: grayscale(20%);
     
 
 }
@@ -163,12 +164,13 @@ header h1 {
 .cont_img1, .cont_img2, .cont_img3{
     
     position: relative;
-    width: 100%;
+    width: 100vw;
     background-position:top;
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
     opacity: 0.8;
+    box-sizing: border-box;
                 
 }
 
@@ -178,6 +180,10 @@ header h1 {
 
 .cont_img2{
     background-image: url("images/bg12.jpg");
+}
+
+.cont_img3{
+    background-image: url("images/bg1.jpg")
 }
 
 .text-container-img{
@@ -196,7 +202,8 @@ header h1 {
     font-weight: 400;
     padding: 50px 50px 50px 50px;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
+    box-sizing: border-box;   
 
 }
 
@@ -216,13 +223,14 @@ header h1 {
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 30px;
-    width: 100%;
+    width: 100vw;
     max-width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    box-sizing: border-box; 
 }
 
 .feature-box{
@@ -280,6 +288,14 @@ header h1 {
     line-height: 4em;
     padding: 0;
     margin: 0;
+}
+
+.video{
+    padding: 25px 20px;
+}
+
+.footer{
+    background-color: #ef233c ;
 }
 
 @media screen and (max-width: 864px){
