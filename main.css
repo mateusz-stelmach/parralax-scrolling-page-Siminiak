@@ -33,7 +33,7 @@ header h1 {
     left: 50%;
     color: #eee2e2e1;
     text-shadow: 0px 2px 20px #d90429;
-    font-size: 3em;
+    font-size: 3.4em;
     text-align: center;
     transform: translate(-50%, -50%); 
 }
@@ -116,7 +116,7 @@ header h1 {
     position: relative;
     box-sizing: border-box;
     width: 50%;
-    font-size: 1em;
+    font-size: 1.2em;
     color:#F1E8E6;
     line-height: 45px;
     text-align: justify;
@@ -126,7 +126,9 @@ header h1 {
     font-weight: 200;
     padding: 10px 50px 50px 50px;
     align-items: center;
-    justify-content: center;   
+    justify-content: center; 
+    border: 1px solid #F1E8E6;
+    border-radius: 5px;  
      
 }
 .img-container{
@@ -193,7 +195,7 @@ header h1 {
     height: 90%;
     max-width: 570px;
     font-size: 1.2em;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     border-radius: 5px;
     color: #edf2f4;
     line-height: 45px;
@@ -212,6 +214,7 @@ header h1 {
     
     text-transform: uppercase;
     text-align: center;
+    text-shadow:  0px 0px 15px #edf2f4;
     
 }
 
@@ -283,14 +286,35 @@ header h1 {
     transform: scaleY(1);    
 }
 
-.text-container-img > ul{
+.text-container-img  ul{
     list-style-type: none;
     text-align: center;
     line-height: 4em;
     padding: 0;
-    margin: 0;
+    margin: 0;  
+    position: relative;  
+    /* text-decoration: underline; */
 }
 
+.text-container-img ul > li{
+    position: relative;
+}
+
+.text-container-img ul > li::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: whitesmoke;
+    color: whitesmoke;
+    bottom: 1px;
+    left: 50%;
+    transform: translate(-50%,50%);
+}
+
+.text-container-img ul > li:last-child::after{
+    display: none;
+}
 .video{
     padding: 25px 20px;
 }
@@ -339,7 +363,7 @@ header h1 {
     color: #edf2f4;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1em;
     letter-spacing: 4px;
     text-decoration: none;
 }
@@ -557,23 +581,25 @@ nav ul li a {
     display: none;
 }
 
+/* //scrollup effect// */
+
 .scrollup
 {
-	width:64px;
-	height:64px;
-	text-decoration:none;
-	background: url("/images/icons8-upward-arrow-64.png") no-repeat 0px 0px;
+	
+	text-decoration:none;    
+    color:#ef233c;
 	position:fixed;
-	right: 225px;
-	bottom:50px;
+	right: 45px;
+	bottom:70px;
 	display:none;
-	border:none;
+    border:none;
+    z-index: 999;
 }
 
 /* //responsive// */
 @media (max-width: 768px){
     h1{
-        font-size: 300%;
+        font-size: 2em;
     }
 
     p{

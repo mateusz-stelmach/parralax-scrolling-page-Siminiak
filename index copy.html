@@ -18,12 +18,13 @@
   
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="animate.css">
-  <link rel="stylesheet" href="css/fontello.css">
+  <link rel="stylesheet" href="css/fontello.css" type="text/css">
   <link rel="stylesheet" href="css//owl.carousel.min.css">
   <link rel="stylesheet" href="css//owl.theme.default.min.css">
   </head>
 
 <body>
+    <a href="#" class="scrollup"><i class="icon-angle-circled-up"></i></a>
     <header class="rellax" data-rellax-speed="-3.5"> 
        <div class="container-nav">
             <nav>
@@ -54,21 +55,21 @@
         </h1>
         
     </header>
-    <main>
+    <main>        
         <div class="container dark" id="o_mnie">
-            <div class ="text-container wow fadeInLeft" data-wow-offset="150" data-wow-duration="1s">
+            <div class ="text-container wow fadeInLeft" data-wow-offset="150" data-wow-duration=".7s">
                 <h2><span>Jan Siminiak</span></h2>
                 
-                <p>Zapraszam do zapoznania się z moją ofertą. Z bardzo dużą chęcią zapewnię oprawę muzyczną na Twoim weselu, imprezie okolicznościowej lub innym ważnym wydarzeniu w Twoim życiu. Zaproponuje repertuar muzyczny, który będzie pasował do tej uroczystości i oczywiście do Ciebie :)
+                <p>Zapraszam do zapoznania się z moją ofertą. Z chęcią zapewnię oprawę muzyczną na Twoim weselu, imprezie okolicznościowej lub innym ważnym wydarzeniu w Twoim życiu. Zaproponuje repertuar muzyczny, który będzie pasował do tej uroczystości i oczywiście do Ciebie.
                 </p>                             
             </div>
-            <div class="img-container class wow fadeInRight" data-wow-offset="150" data-wow-duration="1.8s">
+            <div class="img-container class wow fadeInRight" data-wow-offset="150" data-wow-duration="1s">
                 <img src="images/jan1.jpg";/>
             </div>            
         </div>
 
         <div class="container cont_img1" id="oferta">    
-            <div class ="text-container-img wow fadeIn" data-wow-offset="140" data-wow-duration="2.2s">
+            <div class ="text-container-img wow fadeIn" data-wow-offset="140" data-wow-duration="1.7s">
                 <h2>Co oferuję?</h2>
                 <h3>Integracja gości jest najważniejsza!</h3>
                 <p>Obsługuję muzycznie różnego rodzaju uroczystości np.wesela,18-stki i itp.Prowadzę zabawy dla gości oraz oferuje muzykę dla każdego.Indywidualnie oraz z zaangażowaniem podchodzę do każdego wydarzenia. Sprawdź poniżej moją ofertę!
@@ -142,9 +143,9 @@
             </div>                
         </div>
         <div class="container cont_img2">    
-            <div class ="text-container-img wow fadeIn" data-wow-offset="140" data-wow-duration="2s">
+            <div class ="text-container-img wow fadeIn" data-wow-offset="140" data-wow-duration="1.7s">
                 <h2>Dlaczego ja?</h2>
-                <ul>
+                <ul clss="list">
                     <li>kompleksowa usługa: DJ, wodzirej, oświetlenie</li>
                     <li>najwyższej jakości sprzęt i oświetlenie</li>
                     <li>indywidualne podejście do każdej imprezy</li>
@@ -176,10 +177,10 @@
     </main>
     <footer>
         <div class="container dark" id="contact">
-            <div class="img-container class wow fadeInRight" data-wow-offset="150" data-wow-duration="1.8s">
+            <div class="img-container class wow fadeInLeft" data-wow-offset="150" data-wow-duration=".7s">
                 <img src="images/jasiek.png"/>
             </div>
-            <div class ="text-container wow fadeInLeft" data-wow-offset="150" data-wow-duration="1s">
+            <div class ="text-container wow fadeInRight" data-wow-offset="150" data-wow-duration="1s">
                 <h2><span>Porozmawiajmy o twojej imprezie!</span></h2>                
                 <p>Napisz do mnie lub zadzwoń, odpowiem na wszystkie pytania oraz przygotuję dla Ciebie oferte! Gwarantuję, że będziesz zadowolony.
                 </p> 
@@ -236,10 +237,10 @@
         
     
         $('#oMnie').click(function() { $.scrollTo($('#o_mnie'), 500); });
-        $('#offer').click(function() { $.scrollTo($('#oferta'), 500); });
-        $('#galeria').click(function() { $.scrollTo($('#gallery'), 800); });
+        $('#offer').click(function() { $.scrollTo($('#oferta'), 700); });
+        $('#galeria').click(function() { $.scrollTo($('#gallery'), 900); });
         $('#kontakt').click(function() { $.scrollTo($('#contact'), 1000); });
-        $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+        $('.scrollup').click(function() { $.scrollTo($('body'), 1200); });
         
     }
     );
@@ -250,9 +251,7 @@
             if($(this).scrollTop()>300) $('.scrollup').fadeIn();
             else $('.scrollup').fadeOut();
         
-        }
-        
-        
+        }           
         
         );
 
