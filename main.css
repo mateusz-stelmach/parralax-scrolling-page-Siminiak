@@ -182,7 +182,8 @@ header h1 {
 }
 
 .cont_img2{
-    background-image: url("images/bg12.jpg");
+    background-image: url("images/console.jpg");
+    background-position: bottom;
 }
 
 .cont_img3{
@@ -193,8 +194,8 @@ header h1 {
     position: relative;
     width: 92%;
     height: 90%;
-    max-width: 570px;
-    font-size: 1.2em;
+    max-width: 50vw;
+    font-size: 1.3em;
     background: rgba(0,0,0,0.4);
     border-radius: 5px;
     color: #edf2f4;
