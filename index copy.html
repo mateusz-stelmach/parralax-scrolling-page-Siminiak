@@ -38,10 +38,10 @@
                 </div>
                 <div class="nav-wrapper">
                     <ul>                           
-                            <li><a href="#o_mnie">O mnie</a></li>
-                            <li><a href="#oferta">Oferta</a></li>
-                            <li><a href="#gallery">Galeria</a></li>
-                            <li><a href="#contact">Kontakt</a></li>
+                            <li><a id="oMnie" href="#o_mnie">O mnie</a></li>
+                            <li><a id="offer" href="#oferta">Oferta</a></li>
+                            <li><a id="galeria" href="#gallery">Galeria</a></li>
+                            <li><a id="kontakt" href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
             </nav>
@@ -169,8 +169,8 @@
 
         <div class="container cont_img3">
             <div class="wrapper">                
-                    <iframe width="700" height="500" class="video" src="https://www.youtube.com/embed/oI-NuEFwusk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe width="700" height="500" class="video" src="https://www.youtube.com/embed/TpaSMTKRenQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                    <iframe width="770" height="500" class="video" src="https://www.youtube.com/embed/oI-NuEFwusk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="770" height="500" class="video" src="https://www.youtube.com/embed/TpaSMTKRenQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
             </div>    
         </div>
     </main>
@@ -184,23 +184,11 @@
                 <p>Napisz do mnie lub zadzwoń, odpowiem na wszystkie pytania oraz przygotuję dla Ciebie oferte! Gwarantuję, że będziesz zadowolony.
                 </p> 
                 <h3>+48 516 612 615</h3> 
-                <p>kontakt@djsiminiak.pl</p>                        
+                <h3>kontakt@djsiminiak.pl</h3>                        
             </div>                    
         </div>
         <div class="footer">
-            <div class="container-nav">
-                <nav>
-                    <div class="nav-wrapper">
-                        <ul>                           
-                                <li><a href="#o_mnie">O mnie</a></li>
-                                <li><a href="#oferta">Oferta</a></li>
-                                <li><a href="#gallery">Galeria</a></li>
-                                <li><a href="#contact">Kontakt</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-                <p>Prawa autorskie ©Jan Siminiak 2020 | Prawa zastrzeżone</p>
+            <p>Prawa autorskie ©Jan Siminiak 2020 | Prawa zastrzeżone | | web-dev: @STLBS</p>
         </div>
 
     </footer>
@@ -237,7 +225,7 @@
 })
     </script>
 
-<script src="jquery.scrollTo.min.js"></script>
+<script src="/js/jquery.scrollTo.min.js"></script>
 	
 <script>
     
@@ -247,7 +235,10 @@
         $.scrollTo(0);
         
     
-        $('#link3').click(function() { $.scrollTo($('#oszukac'), 500); });
+        $('#oMnie').click(function() { $.scrollTo($('#o_mnie'), 500); });
+        $('#offer').click(function() { $.scrollTo($('#oferta'), 500); });
+        $('#galeria').click(function() { $.scrollTo($('#gallery'), 800); });
+        $('#kontakt').click(function() { $.scrollTo($('#contact'), 1000); });
         $('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
         
     }
