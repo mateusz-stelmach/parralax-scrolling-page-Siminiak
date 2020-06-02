@@ -12,6 +12,19 @@ html, body {
         
 }
 
+.preloader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;    
+    background-image: url('/images/Eclipse-0.8s-221px.gif');
+    background-repeat: no-repeat; 
+    background-color: black;
+    background-position: center;
+ }
+
 header {
     min-height: 100%;
     position: relative;
@@ -148,7 +161,7 @@ header h1 {
     margin-bottom: 30px;
     border-radius: 5px;
     border-radius: 56% 44% 25% 75% / 53% 25% 75% 47%     ;
-    filter: grayscale(20%);
+    filter: grayscale(10%);
     
 
 }
@@ -179,15 +192,18 @@ header h1 {
 
 .cont_img1{
     background-image: url("images/sound-1031657_1920.jpg");
+    filter: grayscale(30%);
 }
 
 .cont_img2{
     background-image: url("images/console.jpg");
     background-position: bottom;
+    filter: grayscale(40%);
 }
 
 .cont_img3{
-    background-image: url("images/bg1.jpg")
+    background-image: url("images/bg1.jpg");
+    filter: grayscale(30%);
 }
 
 .text-container-img{

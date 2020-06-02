@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="PL">
-
+   
 <head>
   <meta charset="utf-8">
   <title>DJ Siminiak</title>
@@ -20,10 +20,11 @@
   <link rel="stylesheet" href="animate.css">
   <link rel="stylesheet" href="css/fontello.css" type="text/css">
   <link rel="stylesheet" href="css//owl.carousel.min.css">
-  <link rel="stylesheet" href="css//owl.theme.default.min.css">
+  <link rel="stylesheet" href="css//owl.theme.default.min.css">   
   </head>
 
 <body>
+    <div class="preloader"></div>
     <a href="#" class="scrollup"><i class="icon-angle-circled-up"></i></a>
     <header class="rellax" data-rellax-speed="-3.5"> 
        <div class="container-nav">
@@ -63,7 +64,7 @@
                 <p>Zapraszam do zapoznania się z moją ofertą. Z chęcią zapewnię oprawę muzyczną na Twoim weselu, imprezie okolicznościowej lub innym ważnym wydarzeniu w Twoim życiu. Zaproponuje repertuar muzyczny, który będzie pasował do tej uroczystości i oczywiście do Ciebie.
                 </p>                             
             </div>
-            <div class="img-container class wow fadeInRight" data-wow-offset="150" data-wow-duration="1s">
+            <div class="img-container class wow fadeInRight" data-wow-offset="150" data-wow-duration=".8s">
                 <img src="images/jan1.jpg";/>
             </div>            
         </div>
@@ -193,8 +194,23 @@
         </div>
 
     </footer>
-    <Script src="jquery-3.4.1.min.js"></Script>    
+   
+    <script src="jquery-3.4.1.min.js"></script> 
+
+    <script>
+        $(document).ready(function() {
+        //Preloader
+        preloaderFadeOutTime = 500;
+        function hidePreloader() {
+        var preloader = $('.preloader');
+        preloader.fadeOut(preloaderFadeOutTime);
+        }
+        hidePreloader();
+        });
+        </script>
+
     <!-- <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script> -->
+
     <script src="rellax.min.js"></script>
     <script>
         var rellax = new Rellax('.rellax'); 
@@ -233,9 +249,7 @@
     jQuery(function($)
     {
         //zresetuj scrolla
-        $.scrollTo(0);
-        
-    
+        $.scrollTo(0);        
         $('#oMnie').click(function() { $.scrollTo($('#o_mnie'), 500); });
         $('#offer').click(function() { $.scrollTo($('#oferta'), 700); });
         $('#galeria').click(function() { $.scrollTo($('#gallery'), 900); });
