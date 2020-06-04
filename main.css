@@ -1,7 +1,7 @@
 
 html, body {
     font-family: 'Cormorant', serif;
-    margin: 0;
+   margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
@@ -9,19 +9,19 @@ html, body {
     border: none;
     background-color: black;
     box-sizing: border-box;
-        
 }
 
 .preloader {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     z-index: 9999;    
     background-image: url('/images/Eclipse-0.8s-221px.gif');
     background-repeat: no-repeat; 
-    background-color: black;
+    background-color: black;    
+    opacity: 0.8;
     background-position: center;
  }
 
@@ -46,7 +46,7 @@ header h1 {
     left: 50%;
     color: #eee2e2e1;
     text-shadow: 0px 2px 20px #d90429;
-    font-size: 3.4em;
+    font-size: 3.5em;
     text-align: center;
     transform: translate(-50%, -50%); 
 }
@@ -54,7 +54,7 @@ header h1 {
 .rev-block span {
     opacity: 0;
     animation: appear-text 0.7s linear forwards;
-    animation-delay: 1.4s;
+    animation-delay: 2s;
     
 }
 
@@ -131,7 +131,7 @@ header h1 {
     font-size: 1.2em;
     color:#F1E8E6;
     line-height: 45px;
-    text-align: justify;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;  
     text-shadow: aliceblue;
@@ -146,12 +146,13 @@ header h1 {
     position: relative;
     font-size: 1em;
     width: 60%;
-    height: 50px;
-    margin: 0 auto;
+    height: 3.5rem;
+    margin: 50px auto;
+    padding: px;
     display: block;
     background-color: black;
     color: #F1E8E6;
-    animation: border-flash 3.5s linear infinite alternate;
+    animation: border-flash 2.5s linear infinite alternate;
     cursor: pointer;
     border: 2px solid black;
     border-radius: 5px;
@@ -160,29 +161,29 @@ header h1 {
 
 @-moz-keyframes border-flash{
     from{
-       border: none;
+       border: none;       
     }
     to{
         border-radius: 5px;
-        border-color: #d90429;
-    }    
+        border-color: #ef233c;                       
+    } 
 }
 
 @-webkit-keyframes border-flash{
-    from{
-      
+    from{      
        border-color:black;
     }
-    to{
-        
-        border-color: #d90429;
+    to{        
+        border-color: #ef233c;
     }    
 }
 
 .text-container button:hover{
-    background-color: #d90429;
+    background-color: #ef233c;
     border-radius: 30px;     
 }
+
+
 .text-container a{   
     text-decoration: none;
     color:inherit;    
@@ -207,7 +208,7 @@ header h1 {
     margin-bottom: 30px;
     border-radius: 5px;
     filter: grayscale(10%);
-    animation: morphing 15s infinite alternate;
+    animation: morphing 20s infinite alternate;
 	
 }
 
@@ -305,18 +306,18 @@ header h1 {
     position: relative;
     box-sizing: border-box;
     width: 50%;
+    margin: auto auto;
     font-size: 1.2em;
+    min-height: 40vh;
     color:#F1E8E6;
     line-height: 45px;
-    text-align: justify;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;  
     text-shadow: aliceblue;
     font-weight: 200;
-    padding: 10px 50px 50px 50px;
-    align-items: center;
-    justify-content: center; 
-    border: 1px solid #d90429;
+    padding: 20px 50px;
+    border: 1px solid #ef233c;
     border-radius: 5px;  
      
 }
@@ -324,12 +325,12 @@ header h1 {
 .text-container-footer h2{
     text-shadow:  0px 0px 15px #edf2f4;
     text-transform: uppercase;
-    text-align: center;
+   
     
 }
 .text-container-footer h3{
     text-transform: uppercase;
-    text-align: center;
+    
 }
 
 .cont_img1, .cont_img2, .cont_img3{
@@ -340,9 +341,8 @@ header h1 {
     background-size: cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
-    opacity: 0.8;
     box-sizing: border-box;
-                
+    opacity: 0.8;            
 }
 
 .cont_img1{    
@@ -361,22 +361,20 @@ header h1 {
 
 .text-container-img{
     position: relative;
-    width: 92%;
-    height: 90%;
-    max-width: 50vw;
+    max-width: 50vw;    
     font-size: 1.3em;
     background: rgba(0,0,0,0.45);
     border-radius: 5px;
     color: #edf2f4;
     line-height: 45px;
-    text-align: justify;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;  
-    font-weight: 400;
     padding: 50px 50px 50px 50px;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    border: 1px solid #ef233c;   
 
 }
 
@@ -408,7 +406,7 @@ header h1 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box; 
+    box-sizing: border-box;     
 }
 
 .feature-box{
@@ -497,11 +495,13 @@ header h1 {
     background-color: #ef233c ;
     text-align: center;
     padding: 10px 0px;
+    height: 40px;
 }
 
 @media screen and (max-width: 864px){
     body{
         overflow-x: hidden;
+
     }
     .container{
         padding: 20px 0 10px 0;
@@ -632,7 +632,7 @@ nav ul li a {
           left: 0;
           width: 100%;
           height: 100%;
-          z-index: 1;
+          z-index: 999;
           background:#F0F0F0;
           opacity: 0;
           transition: all 0.2s ease;
@@ -767,7 +767,7 @@ nav ul li a {
 	bottom:70px;
 	display:none;
     border:none;
-    z-index: 999;
+    z-index: 1;
 }
 
 /* //responsive// */
