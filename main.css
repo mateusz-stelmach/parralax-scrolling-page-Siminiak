@@ -9,6 +9,7 @@ html, body {
     border: none;
     background-color: black;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .preloader {
@@ -30,13 +31,29 @@ header {
     position: relative;
     width: 100%;
     text-transform: uppercase;
+    /* background-position:bottom;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image: url("images/bg8.jpg");
+    background-attachment: fixed; */
+    filter: opacity(1);
+    
+}
+
+header::before{
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     background-position:center;
     background-size:cover;
     background-repeat:no-repeat;
     background-image: url("images/bg8.jpg");
-    background-attachment:fixed;
-    filter: contrast(85%);
-    
+    background-attachment: fixed;
+    z-index: -1;
+    will-change: transform;
 }
 
 header h1 {
@@ -295,6 +312,7 @@ header h1 {
     text-shadow:  0px 0px 15px #edf2f4;
     text-transform: uppercase;
     text-align: center;
+    font-size: 1.9em;
     
 }
 .text-container h3{
@@ -363,7 +381,7 @@ header h1 {
     position: relative;
     max-width: 50vw;    
     font-size: 1.3em;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.35);
     border-radius: 5px;
     color: #edf2f4;
     line-height: 45px;
@@ -627,7 +645,7 @@ nav ul li a {
     }
 
     .nav-wrapper {
-          position: fixed;
+          position: absolute;
           top: 0;
           left: 0;
           width: 100%;
