@@ -1,7 +1,7 @@
 
 html, body {
     font-family: 'Cormorant', serif;
-   margin: 0;
+    margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
@@ -26,18 +26,18 @@ html, body {
     background-position: center;
  }
 
+
 header {
     min-height: 100%;
     position: relative;
-    width: 100%;
+    width: 100vw;
     text-transform: uppercase;
     /* background-position:bottom;
     background-size:cover;
     background-repeat:no-repeat;
     background-image: url("images/bg8.jpg");
     background-attachment: fixed; */
-    filter: opacity(1);
-    
+    filter: opacity(1);    
 }
 
 header::before{
@@ -68,10 +68,11 @@ header h1 {
     transform: translate(-50%, -50%); 
 }
 
+
 .rev-block span {
     opacity: 0;
     animation: appear-text 0.7s linear forwards;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
     
 }
 
@@ -85,8 +86,8 @@ header h1 {
     background: #d90429;
     opacity: 0.5;
     filter: blur(12px);
-    animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-    animation-delay: 1s;
+    animation: rev-block 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+    animation-delay: 1.5s;
     
 }
 
@@ -132,8 +133,8 @@ header h1 {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px 50px 30px 50px;
-      
+    padding: 10px 0px;
+   
 }
 
 .dark{
@@ -144,7 +145,7 @@ header h1 {
 .text-container{
     position: relative;
     box-sizing: border-box;
-    width: 50%;
+    width: 45vw;
     font-size: 1.2em;
     color:#F1E8E6;
     line-height: 45px;
@@ -153,7 +154,7 @@ header h1 {
     margin-right: auto;  
     text-shadow: aliceblue;
     font-weight: 200;
-    padding: 10px 50px 50px 50px;
+    padding: 50px 50px;    
     align-items: center;
     justify-content: center;
    
@@ -215,6 +216,24 @@ header h1 {
     padding: 50px 50px 50px 50px;
     align-items: center;
     justify-content: center    
+}
+.img-container-footer{
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 50px 50px 50px 50px;
+    align-items: center;
+    justify-content: center    
+}
+
+.img-container-footer img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    
 }
 
 .img-container img{
@@ -323,18 +342,18 @@ header h1 {
 .text-container-footer{
     position: relative;
     box-sizing: border-box;
-    width: 50%;
-    margin: auto auto;
+    width: 45%;
+    max-width: 50vw;
     font-size: 1.2em;
     min-height: 40vh;
     color:#F1E8E6;
-    line-height: 45px;
+    line-height: 45px;    
     text-align: center;
     margin-left: auto;
     margin-right: auto;  
     text-shadow: aliceblue;
     font-weight: 200;
-    padding: 20px 50px;
+    padding: 10px 100px;
     border: 1px solid #ef233c;
     border-radius: 5px;  
      
@@ -360,7 +379,7 @@ header h1 {
     background-repeat:no-repeat;
     background-attachment:fixed;
     box-sizing: border-box;
-    opacity: 0.8;            
+    opacity: 0.8                
 }
 
 .cont_img1{    
@@ -369,7 +388,7 @@ header h1 {
 }
 
 .cont_img2{
-    background-image: url("images/console.jpg");
+    background-image: url("images/headlights.jpg");
     background-position: bottom;   
 }
 
@@ -386,8 +405,7 @@ header h1 {
     color: #edf2f4;
     line-height: 45px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;  
+    margin:50px auto ; 
     padding: 50px 50px 50px 50px;
     align-items: center;
     justify-content: center;
@@ -544,10 +562,12 @@ header h1 {
 
 /* //navigation bar & effects on it// */
  .logo {
+    box-sizing: border-box;
     float: left;
     padding: 40px 5px 0 20px ;
     margin-left: 16px;
-    max-width: 200px;
+    max-width: 350px;
+    text-align: center;
     
 }
 
@@ -558,13 +578,17 @@ header h1 {
     font-size: 1em;
     letter-spacing: 4px;
     text-decoration: none;
+    
 }
 .logo, nav {
     padding-top: 2.5vh;
+       
 }
 
 nav ul {
     float: right;
+    box-sizing: border-box;
+    
     
 }
 
@@ -789,23 +813,130 @@ nav ul li a {
 }
 
 /* //responsive// */
-@media (max-width: 768px){
-    h1{
-        font-size: 2em;
+@media screen and (max-width: 768px){
+    header h1 {
+        font-size: 3.5em;
     }
 
-    p{
-        font-size: 17px;
-        letter-spacing: 10px;
+    .logo{
+        font-size: 1em;
     } 
+
+    .container{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+     
+
+    }
+    .text-container, .text-container-img, .text-container-footer{
+        font-size: 1.5em;
+        line-height: 1em;
+        min-width: 85%;
+        line-height: 1.7em;
+        margin: 20px 0;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .text-container button{
+        font-size: .85em;
+    }
+    
+    .text-container-footer h2{
+        font-size: 1.2em;
+    }
    
+    .text-container-footer h3{
+        font-size: .9em;
+    }
+
+    .text-container-img ul > li{
+        font-size: .9em;
+    }
+    .img-container-footer{
+        width: 100vw;
+        margin: 20px 0; 
+    }
+
+    .img-container-footer img{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;       
+    }
+
+    .text-container-img  ul{
+        line-height: 2.5em;
+        padding: 5px 0;
+        margin: 20px 0;  
+        position: relative;  
+    }
+    .text-container-img ul li{
+        padding: 20px 0;
+    }
+
+    iframe{
+        height: 250px;
+
+    }
+    .footer{
+        margin-top: 15;
+        margin-bottom: 0;
+        padding: 0px 15px;        
+    }
 }
 
-/* //antialiasing for fonts// */
 
-* {
+@media screen and (min-width:1281px ){
+    
+    header h1 {
+        font-size: 4.5em;
+    }
+
+    .logo a{
+        font-size:1.2em ;
+    } 
+
+    nav ul li a{
+        font-size: 1.4em;
+    }
+
+    .text-container, .text-container-img, .text-container-footer{
+        font-size: 1.8em;
+        line-height: 1.8em;
+    }
+    .img-container img{
+        width: 90%;
+        margin: auto auto;
+    }
+   
+    .text-container-img ul > li{
+        font-size: 1em;
+    }
+
+    .img-container-footer img{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 50px;
+        padding-left: 150px;
+    }
+    
+}
+
+/* //antialiasing for fonts/// */
+
+ * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+  } 
   
   
