@@ -14,7 +14,22 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/fontello.css" type="text/css">
   <link rel="stylesheet" href="css//owl.carousel.min.css">
   <link rel="stylesheet" href="css//owl.theme.default.min.css">   
-  </head>
+  
+  <script src="jquery-3.4.1.min.js"></script> 
+
+  <script>
+      $(document).ready(function() {
+      //Preloader
+      preloaderFadeOutTime = 700;
+      function hidePreloader() {
+      var preloader = $('.preloader');
+      preloader.fadeOut(preloaderFadeOutTime);
+      }
+      hidePreloader();
+      });
+  </script>
+
+</head>
 
 <body>
     <div class="preloader"></div>
@@ -188,20 +203,7 @@
         </div>
 
     </footer>
-   
-    <script src="jquery-3.4.1.min.js"></script> 
-
-    <script>
-        $(document).ready(function() {
-        //Preloader
-        preloaderFadeOutTime = 700;
-        function hidePreloader() {
-        var preloader = $('.preloader');
-        preloader.fadeOut(preloaderFadeOutTime);
-        }
-        hidePreloader();
-        });
-        </script>
+     
 
     <!-- <script src="https://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script> -->
 
