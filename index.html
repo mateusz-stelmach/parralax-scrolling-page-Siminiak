@@ -13,15 +13,15 @@
   <link rel="stylesheet" href="main.css" rel="preload">
   <link rel="stylesheet" href="animate.css">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/fontello.css" type="text/css">
-  <link rel="stylesheet" href="css//owl.carousel.min.css">
-  <link rel="stylesheet" href="css//owl.theme.default.min.css">   
+  <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+  <link href="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />  
   
   <script src="jquery-3.4.1.min.js"></script> 
 
   <script>
-      $(document).ready(function() {
+      $(document.body).ready(function() {
       //Preloader
-      preloaderFadeOutTime = 700;
+      preloaderFadeOutTime = 400;
       function hidePreloader() {
       var preloader = $('.preloader');
       preloader.fadeOut(preloaderFadeOutTime);
@@ -76,7 +76,7 @@
                 <a href="#contact"><button>Zarezerwuj termin!</button></a>                   
             </div>
             <div class="img-container wow fadeInRight" data-wow-offset="200" data-wow-duration=".8s">
-                <img src="images/jan1.jpg" alt="jan1";/>
+                <img src="images/foto13.jpg" alt="jan";/>
             </div>            
         </div>
 
@@ -84,7 +84,7 @@
             <div class ="text-container-img wow fadeIn" data-wow-offset="140" data-wow-duration="1.7s">
                 <h2>Co oferuję?</h2>
                 <h3>Integracja gości jest najważniejsza!</h3>
-                <p>Obsługuję muzycznie różnego rodzaju uroczystości: wesela, czy 18-stki. Prowadzę zabawy dla gości oraz oferuje muzykę dla każdego. Indywidualnie oraz z zaangażowaniem podchodzę do każdego wydarzenia. Sprawdź poniżej moją ofertę!
+                <p>Obsługuję muzycznie różnego rodzaju uroczystości: wesela, imprezy firmowe czy 18-stki. Dla pełnej integracji gości poprowadzę gry i konkursy wraz z niezbędnymi gadżetami. W swojej ofercie posiadam utwory muzyczne z różnych gatunków muzycznych, przez co trafiam w gusta gości weselnych z różnego pokolenia (muzyka lat 60-90 zagraniczna oraz polska, muzyka współczesna, latynoska a także disco – polo ). Uwzględniam także Wasze propozycje muzyczne oraz utwory dla Was istotne, które chcielibyście, żeby towarzyszyły Wam podczas tego wielkiego wydarzenia ( do max. 40). Nie może też zabraknąc wytwornicy dymu do dopelnienia klimatu :)<br>Indywidualnie oraz z zaangażowaniem podchodzę do każdego wydarzenia. Zadowolenie Młodej Pary oraz Gości to dla mnie największa satysfakcja i uznanie!
                 </p>
             </div>           
         </div>
@@ -95,7 +95,7 @@
                     <div class="feature-photo">
                         <div class="overlay-photo">
                             <img src="/images/wedding.jpg" alt="wesela">
-                            <span class="link"><p>Pełna oprawa i opieka nad gośćmi w tym najbardziej wyjątkowym dniu</p></span>
+                            <span class="link"><p>Kompleksowa oprawa muzyczna oraz wodzirejska podczas najważniejszego dnia w Waszym życiu </p></span>
                         </div>                       
                     </div>
                     <p>Wesela</p>
@@ -115,7 +115,7 @@
                     <div class="feature-photo">
                         <div class="overlay-photo">
                             <img src="/images/colored-balloons.jpg" alt="bale-maturalne">
-                            <span class="link"><p>Klasyczny polonez oraz wszystko czego potrzeba tego wieczoru</p></span>
+                            <span class="link"><p>Klasyczny polonez, belgijka czy inne tańce powitalne to tylko wstęp do wspaniałej przedmaturalnej zabawy </p></span>
                         </div>                       
                     </div>
                     <p>Bale maturalne</p>
@@ -125,7 +125,7 @@
                     <div class="feature-photo">
                         <div class="overlay-photo">
                             <img src="/images/bg4.jpg" alt="imprezy-taneczne">
-                            <span class="link"><p>Taneczne rytmy i egzotyczna zabawa do białego rana</p></span>
+                            <span class="link"><p>Taneczne rytmy dostosowane do Waszego gustu, pełne zaangażowanie i świetna współpraca</p></span>
                         </div>                       
                     </div>
                     <p>Wszelkie imprezy taneczne</p>
@@ -135,7 +135,7 @@
                     <div class="feature-photo">
                         <div class="overlay-photo">
                             <img src="/images/person-standing-at-top-mountain.jpg" alt="imprezy-plenerowe">
-                            <span class="link"><p>Jestem w stanie zapewnić oprawę także imprez na powietrzu</p></span>
+                            <span class="link"><p>Oprawa muzyczna i oświetleniowa imprez na świeżym powietrzu </p></span>
                         </div>                       
                     </div>
                     <p>Imprezy plenerowe</p>
@@ -145,7 +145,7 @@
                     <div class="feature-photo">
                         <div class="overlay-photo">
                             <img src="/images/happy-birthday-card.jpg" alt="urodziny">
-                            <span class="link"><p>Każda uroczystość jest dla mnie wyjątkowym wydarzeniem</p></span>
+                            <span class="link"><p>Gwaratnuję że goście zapamiętają tą imprezę na długo!</p></span>
                         </div>                       
                     </div>
                     <p>Urodziny</p>
@@ -170,22 +170,51 @@
             </div>       
         </div>
         
-        <div class="dark wrapper" id="gallery">
-            <div class="owl-carousel owl-theme">
-                    <div class="item "><img src="images/foto 00.jpg" alt="foto1"></div>
-                    <div class="item"><img src="/images/foto 000.jpg" alt="foto2"></div>
-                    <div class="item"><img src="/images/foto0.jpg" alt="foto3"></div>
-                    <div class="item"><img src="/images/foto01.jpg" alt="foto4"></div>
-                    <div class="item"><img src="/images/foto03.jpg" alt="foto5"></div>                    
-            </div>            
-        </div>    
+        <section class="wrapper" id="gallery">            
+                <div class="container-grid wow fadeIn" data-wow-offset="100" data-wow-duration="1.7s" >
+                    <div class="grid-gallery">
+                        <div class="photo grid-item grid-item1"><a href="/images/foto12.jpg" class="gallery2"><img src="/images/foto12.jpg" class="lazyload" alt="foto2"></a></div>
+                        <div class="photo grid-item grid-item2"><a href="/images/foto0.jpg" class="gallery2"><img src="/images/foto0.jpg" class="lazyload" alt="foto3"></a></div>
+                        <div class="photo grid-item grid-item3"><a href="/images/foto01.jpg" class="gallery2"><img src="/images/foto01.jpg" class="lazyload" alt="foto4"></a></div>
+                        <div class="photo grid-item grid-item4"><a href="/images/foto03.jpg" class="gallery2"><img src="/images/foto03.jpg" class="lazyload" alt="foto5"></a></div>
+                        <div class="photo grid-item grid-item5"><a href="/images/foto5.jpg" class="gallery2"><img src="/images/foto5.jpg" class="lazyload" alt="foto7"></a></div>
+                        <div class="photo grid-item grid-item6"><a href="/images/foto6.jpg" class="gallery2"><img src="/images/foto6.jpg" class="lazyload" alt="foto8"></a></div>
+                        <div class="photo grid-item grid-item7"><a href="/images/foto7.jpg" class="gallery2"><img src="/images/foto7.jpg" class="lazyload" alt="foto9"></a></div>
+                        <div class="photo grid-item grid-item8"><a href="/images/foto8.jpg" class="gallery2"><img src="/images/foto8.jpg" class="lazyload" alt="foto10"></a></div>
+                        <div class="photo grid-item grid-item9"><a href="/images/foto10.jpg" class="gallery2"><img src="/images/foto10.jpg" class="lazyload" alt="foto11"></a></div>
+                        <div class="photo grid-item grid-item10"><a href="/images/foto11.jpg" class="gallery2"><img src="/images/foto11.jpg" class="lazyload" alt="foto12"></a></div>
+                        <div class="photo grid-item grid-item11"><a href="/images/foto 000.jpg" class="gallery2"><img src="/images/foto 000.jpg" class="lazyload" alt="foto13"></a></div>
+                    </div>                      
+                </div>
+                 <div class="wrapper">                
+                    <iframe title="wesele1" width="500" height="320" class="video" src="https://www.youtube.com/embed/oI-NuEFwusk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe title="wesele2" width="500" height="320" class="video" src="https://www.youtube.com/embed/TpaSMTKRenQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
+                </div>                
+            </div>               
+        </section> 
 
-        <div class="container cont_img3">
-            <div class="wrapper">                
-                    <iframe title="wesele1" width="770" height="500" class="video" src="https://www.youtube.com/embed/oI-NuEFwusk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <iframe title="wesele2" width="770" height="500" class="video" src="https://www.youtube.com/embed/TpaSMTKRenQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    
-            </div>    
-        </div>
+        <section class="container wrapper cont_img3 wow fadeIn" data-wow-offset="100" data-wow-duration="1.7s">
+            <div class="opinia">
+                <i>Gorąco polecamy Pana Jana , lepszego Dj nie mogliśmy sobie wymarzyć, przede wszystkim wielkie podziękowania od gości i od Nas Pary Młodej. Dj sprostał wyzwaniu, roztańczył każdego na Weselu, zarówno młodych jak i starszych. Duży plus za profesjonalizm, sprzęt zrobił na mnie wrażenie, bardzo dobre nagłośnienie jak i efekty świetlne. Podsumowując nic dodać nic ująć, jeszcze raz dziękujemy z całego serca, pozdrawiamy i gorąco Polecamy !!! </i>
+                <p>Adrian G</p>
+            </div>
+            <div class="opinia">
+                <i>Współpraca przebiegła bez żadnych problemów. Kontakt przed uroczystością bez zarzutu. Na wszystkie pytania odpowiedź natychmiastowa. Wszyscy goście bawili się znakomicie i nie schodzili z parkietu. Zabawy oczepinowe zaproponowane przez nas zrealizowane! Nic dodac nic ująć Serdecznie polecamy </i>
+                <p>Państwo Milczarek</p>
+            </div>
+            <div class="opinia">
+                <i>Tak pogodnego i pozytywnie nastawionego człowieka dawno nie spotkaliśmy! Świetna komunikacja i przede wszystkim serca włożone w każdą chwilę wesela-goście do dzisiaj wspominają wspaniałą oprawę muzyczną i zabawy podczas oczepin! Gorąco polecamy i życzymy dalszego rozwoju zawodowego !</i>
+                <p>Hania i Michał</p>
+            </div>
+            <div class="opinia">
+                <i>Super Dj, super osobowość, super muzyka i super zabawa! Polecam serdecznie każdemu, kto chce mieć pewność, ze bawić sie będę wszyscy - zarówno babcie i dziadkowie, ale również znajomi i przyjaciele.
+                    Pan Janek to bardzo sympatyczny człowiek - przede wszystkim bezproblemowy, a to ważne, kiedy piętrzą sie weselne problemy.
+                    Jesteśmy bardzo zadowoleni. Na pewno skorzystamy z usług Dj Siminiaka na innych uroczystościach rodzinnych - kto wie - może juz na rocznicy :)</i>
+                <p>Magda</p>
+            </div>
+            
+
+        </section>
     </main>
     <footer>
         <div class="container dark" id="contact">
@@ -210,28 +239,7 @@
     <script src="wow.min.js"></script>
     <script>
         new WOW().init();
-    </script>
-
-    <script src="js/owl.carousel.min.js"></script>
-    <script>
-        $('.owl-carousel').owlCarousel({
-            stagePadding: 0,
-            loop:true,
-            margin:20,
-            nav:false,
-            responsive:{
-                0:{
-                    items:1
-                },
-                600:{
-                    items:2
-                },
-                1000:{
-                    items:4
-                }
-    }
-})
-    </script>
+    </script>  
 
 <script src="/js/jquery.scrollTo.min.js"></script>
 	
@@ -262,6 +270,32 @@
 
 </script>
 
+<!-- //featherlight gallery// -->
+
+<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="//cdn.jsdelivr.net/npm/featherlight@1.7.14/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.gallery2').featherlightGallery({
+            gallery: {
+                fadeIn: 300,
+                fadeOut: 300
+            },
+            openSpeed:    300,
+            closeSpeed:   300
+        });
+        $('.gallery2').featherlightGallery({
+            gallery: {
+                next: 'next »',
+                previous: '« previous'
+            },
+            variant: 'featherlight-gallery2'
+        });
+    });
+</script>
+
+<script src="assets/js/lazysizes.min.js" async></script>
 
 </body>
 
