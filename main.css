@@ -449,6 +449,16 @@ header h1 {
     border: 1px solid #ef233c; 
 }
 
+.opinie-link{
+    display: block;
+    color: #edf2f4;    
+}
+
+.opinie-link a{
+    color: #ef233c;
+    text-decoration: none;
+}
+
 .wrapper{
     margin-left: auto;
     margin-right: auto;
@@ -553,6 +563,9 @@ header h1 {
     height: 30px;    
 }
 
+.footer a{
+    text-decoration: none;
+}
 
 
 /* @media screen and (max-width: 864px){
@@ -973,7 +986,7 @@ nav ul li a {
     }  
     
     header::before{
-        background-image: url(/images/bg8-mob.jpg);
+        background-image: url(images/bg8-mob.jpg);
         background-position: bottom   }
           
     header h1 {
@@ -1002,12 +1015,12 @@ nav ul li a {
     }
 
     .text-container, .text-container-img, .text-container-footer{
-        font-size: 1.5em;
+        font-size: 1.3em;
         line-height: 1em;
         min-width: 85%;
         line-height: 1.7em;
-        margin: 20px 0;
-        padding: 0 15px;
+        margin: 15px 0;
+        padding: 0 5px;
         text-align: center;
     }
 
@@ -1051,10 +1064,25 @@ nav ul li a {
         height: 250px;
 
     }
+
+    .opinia{
+        position: relative;
+        max-width: 400px;
+        height: 335px;            
+        font-size: 1.1em;
+        background: rgba(0,0,0,0.35);
+        border-radius: 5px;
+        color: #edf2f4;
+        line-height: 18px;        
+        margin:15px 40px; 
+        padding:20px 15px;
+       
+    }
+
     .footer{
-        margin-top: 15;
-        margin-bottom: 0;
-        padding: 0px 15px;        
+        margin-top: 5px;
+        margin-bottom: 0px;
+        padding: 2px 5px 25px 5px;        
     }
 }
 
