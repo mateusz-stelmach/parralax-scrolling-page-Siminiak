@@ -1158,8 +1158,7 @@ nav ul li a {
         color: #F1E8E6;    
         cursor: pointer;
         border: 2px solid #ef233c;
-        border-radius: 5px;
-        transition: all 0.5s ease-out; 
+        border-radius: 5px;        
     }        
 }
 
