@@ -972,7 +972,7 @@ nav ul li a {
 }
 
 .form input{
-    width: 35em;
+    width: 25em;
     height: 2.5em;
     margin: 10px 0px;
     border-radius: 15px;
@@ -981,8 +981,8 @@ nav ul li a {
 }
 
 .form textarea{
-    width: 35em;
-    height: 6em;
+    width: 25em;
+    height: 8em;
     margin: 10px 0px;
     border-radius: 15px;
     border: 2px solid #ef233c ;
