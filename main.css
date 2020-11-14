@@ -168,8 +168,6 @@ header h1 {
     width: 60%;
     height: 3.5rem;
     margin: 50px auto;
-    padding: px;
-    display: block;
     background-color: black;
     color: #F1E8E6;
     animation: border-flash 2.5s linear infinite alternate;
@@ -355,7 +353,7 @@ header h1 {
     margin-right: auto;  
     text-shadow: aliceblue;
     font-weight: 200;
-    padding: 10px 100px;
+    padding: 10px 25px;
     border: 1px solid #ef233c;
     border-radius: 5px;  
      
@@ -369,6 +367,7 @@ header h1 {
 }
 .text-container-footer h3{
     text-transform: uppercase;
+    font-size: 1.1em;
     
 }
 
@@ -962,6 +961,53 @@ nav ul li a {
     }
 }
 
+
+/* contact-form */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;    
+}
+
+.form input{
+    width: 35em;
+    height: 2.5em;
+    margin: 10px 0px;
+    border-radius: 15px;
+    border: 2px solid #ef233c ;
+    background-color: edf2f4;
+}
+
+.form textarea{
+    width: 35em;
+    height: 6em;
+    margin: 10px 0px;
+    border-radius: 15px;
+    border: 2px solid #ef233c ;
+    background-color: edf2f4;
+}
+
+.form button{
+    font-size: .8em;
+    margin: 10px 0px;
+    width: 15em;
+    height: 2.5em;
+    background-color: black;
+    color: #F1E8E6;    
+    cursor: pointer;
+    border: 2px solid #ef233c;
+    border-radius: 5px;
+    transition: all 0.5s ease-out; 
+}
+
+.form button:hover{
+    background-color: #ef233c;
+    border-radius: 30px;
+}
+
+
 /* //scrollup effect// */
 
 .scrollup
@@ -1084,6 +1130,43 @@ nav ul li a {
         margin-bottom: 0px;
         padding: 2px 5px 25px 5px;        
     }
+
+    .form input{
+        width: 20em;
+        height: 2.5em;
+        margin: 10px 0px;
+        border-radius: 15px;
+        border: 2px solid #ef233c ;
+        background-color: edf2f4;
+    }
+    
+    .form textarea{
+        width: 20em;
+        height: 10em;
+        margin: 10px 0px;
+        border-radius: 15px;
+        border: 2px solid #ef233c ;
+        background-color: edf2f4;
+    }
+    
+    .form button{
+        font-size: .8em;
+        margin: 10px 0px;
+        width: 15em;
+        height: 2.5em;
+        background-color: black;
+        color: #F1E8E6;    
+        cursor: pointer;
+        border: 2px solid #ef233c;
+        border-radius: 5px;
+        transition: all 0.5s ease-out; 
+    }
+
+    .form button:hover{
+        background-color: #ef233c;
+        border-radius: 30px;
+    }
+    
 }
 
 
