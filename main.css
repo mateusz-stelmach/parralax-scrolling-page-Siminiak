@@ -384,17 +384,18 @@ header h1 {
 }
 
 .cont_img1{    
-    background-image: url("images/sound-1031657_1920.jpg");
+    background-image: linear-gradient(to top  , rgba(0, 0, 0, 0.575), rgba(192, 41, 3, 0.301)),url("images/sound-1031657_1920.jpg");
+    
    
 }
 
 .cont_img2{
-    background-image: url("images/headlights.jpg");
+    background-image: linear-gradient(to top  , rgba(0, 0, 0, 0.575), rgba(192, 41, 3, 0.301)) , url("images/headlights.jpg");
     background-position: bottom;   
 }
 
 .cont_img3{
-    background-image: url("images/bg1.jpg");   
+    background-image: linear-gradient(to top  , rgba(0, 0, 0, 0.575), rgba(192, 41, 3, 0.267)) , url("images/bg1.jpg");   
 }
 
 .text-container-img{
