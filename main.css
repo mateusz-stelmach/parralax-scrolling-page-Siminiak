@@ -1133,9 +1133,7 @@ nav ul li a {
         padding: 2px 5px 25px 5px;        
     }
 
-    .form {
-        display: none;
-    }
+    
     .form input{
         width: 20em;
         height: 2.5em;
