@@ -1033,7 +1033,9 @@ nav ul li a {
     
     header::before{
         background-image: url(images/bg8-mob.jpg);
-        background-position: bottom   }
+        background-position: bottom;
+        object-fit: cover;
+       }
           
     header h1 {
         font-size: 3.5em;
@@ -1131,6 +1133,9 @@ nav ul li a {
         padding: 2px 5px 25px 5px;        
     }
 
+    .form {
+        display: none;
+    }
     .form input{
         width: 20em;
         height: 2.5em;
