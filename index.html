@@ -41,7 +41,7 @@
   <script src="jquery-3.4.1.min.js"></script> 
 
   <script>
-      $(document).ready(function() {
+      $(document.header).ready(function() {
       //Preloader
       preloaderFadeOutTime = 200;
       function hidePreloader() {
@@ -254,9 +254,9 @@
 
                 <form  class="form" name="contact" method="POST" data-netlify="true">
                     <h3>Porozmawiajmy: </h3>
-                        <input type="text" name="name" placeholder="imie i nazwisko" style="text-align: center" ></label>                   
-                        <input type="email" name="email" placeholder="email" style="text-align: center" ></label>
-                    <textarea name="message" placeholder="Twoja wiadomość" row=4 style="text-align: center"></textarea></label>
+                        <input type="text" name="name" placeholder="imie i nazwisko" style="text-align: center" required ></label>                   
+                        <input type="email" name="email" placeholder="email" style="text-align: center" required></label>
+                    <textarea name="message" placeholder="Twoja wiadomość" row=4 style="text-align: center" required></textarea></label>
                     <button type="submit">Wyślij</button>
                     </p>
                 </form> 
