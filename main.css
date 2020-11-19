@@ -124,8 +124,8 @@ header h1 {
 .wesele_z_klasa_logo{
     display: flex;
     position: absolute;
-    bottom: 50px;
-    left: 100px;
+    bottom: 3em;
+    left: 8em;
     width: 75px;
 }
 
