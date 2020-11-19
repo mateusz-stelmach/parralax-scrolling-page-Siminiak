@@ -121,6 +121,14 @@ header h1 {
 
 }
 
+.wesele_z_klasa_logo{
+    display: flex;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 75px;
+}
+
 .container {
     position: relative;
     width: 100vw;
@@ -1045,6 +1053,10 @@ nav ul li a {
     .logo{
         font-size: 1em;
     } 
+
+    .wesele_z_klasa_logo{
+        display: none;
+    }
 
     .container{
         flex-direction: column;
