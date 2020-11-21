@@ -74,6 +74,7 @@
                             <li><a id="oMnie" href="#o_mnie">O mnie</a></li>
                             <li><a id="offer" href="#oferta">Oferta</a></li>
                             <li><a id="galeria" href="#gallery">Galeria</a></li>
+                            <li><a id="faq" href="#faqu">FAQ</a></li>
                             <li><a id="kontakt" href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
@@ -216,6 +217,57 @@
                 </div>                
             </div>               
         </section> 
+        <section class="container dark faq" id="faqu">
+            <h2>FAQ</h2>
+            <button class="collapsible">1. Z jakim wyprzedzeniem warto zamówić DJa? </button>
+            <div class="content">
+            <p>Sezon weselny skupia się głównie na miesiącach od kwietnia do września w związku z tym ilość weekendów jest ograniczona. Najczęściej Pary Młode rezerwują termin z dłuższym wyprzedzeniem- około roku przed planowaną datą wesela. 
+            </p>
+            </div>
+
+            <button class="collapsible">2. Do ilu km od Poznania Pan dojeżdża?</button>
+            <div class="content">
+            <p>Dojeżdżam do 150 km od Poznania w jedną stronę bez noclegu,  powyżej tej odległości proszę Parę Młodą o nocleg.  
+            </p>
+            </div>
+
+            <button class="collapsible">3. Od czego zależy cena?</button>
+            <div class="content">
+            <p>Cena uzależniona jest od szacowanej ilości gości na weselu oraz od odległości do miejsca uroczystości.  
+            </p>
+            </div>
+
+            <button class="collapsible">4. Jak wygląda sprawa płatności?</button>
+            <div class="content">
+            <p>W dniu podpisania umowy uiszczają Państwo zadatek w wysokości 300zł, pozostała część jest płatna w dniu wesela. 
+            </p>
+            </div>
+
+            <button class="collapsible">5. Czy możemy zaproponować swoje utwory?</button>
+            <div class="content">
+            <p>Oczywiście! W ramach umówionej ceny mogą Państwo przygotować do 40 swoich propozycji muzycznych. 
+            </p>
+            </div>
+
+            <button class="collapsible">6. Czy możemy zaproponować swoje zabawy / pomysły na oczepiny?</button>
+            <div class="content">
+            <p>Tak,  jak najbardziej. Dostosowuje się do każdej uroczystości indywidualnie – to Para Młoda decyduje, jakie atrakcje i zabawy chce mieć na własnym weselu. Oczywiście chętnie dzielę się doświadczeniem  oraz swoimi przemyśleniami . Wspólnie omawiamy cały scenariusz weselny. Posiadam w swojej ofercie około 20 zabaw – chętnie zaproponuje swoje sprawdzone. 
+            </p>
+            </div>
+
+            <button class="collapsible">7. Jak dokonać rezerwacji terminu?</button>
+            <div class="content">
+            <p>Telefonicznie lub na wspólnym spotkaniu. Potwierdzeniem rezerwacji terminu jest dla mnie podpisanie umowy z Młodą Parą oraz wpłacenie zaliczki. 
+            </p>
+            </div>
+
+            <button class="collapsible">8. Czy koszt Pana dojazdu jest wliczony w cenę?</button>
+            <div class="content">
+            <p>Tak, koszt dojazdu  wliczam w cenę końcową, jaką Państwu przekazuje. 
+            </p>
+            </div>
+
+        </section>
 
         <section class="container wrapper cont_img3">
             <div class="wrapper wow fadeIn"  data-wow-offset="100" data-wow-duration="1.7s">
@@ -240,7 +292,7 @@
             </div>
             <p class="opinie-link">Wiecej opini na <a href="https://wedding.pl/dj-na-wesele/dj-siminiak" target="_blank">wedding.pl</a> oraz na <a href="https://www.weselezklasa.pl/ogloszenia-weselne/dj-na-twoje-wesele,34893/" target="_blank">weselezklasa.pl</a></p>
 
-        </section>
+        </section>        
     </main>
     <footer>
         <div class="container dark">
@@ -286,6 +338,7 @@
         $('#oMnie').click(function() { $.scrollTo($('#o_mnie'), 700); });
         $('#offer').click(function() { $.scrollTo($('#oferta'), 1000); });
         $('#galeria').click(function() { $.scrollTo($('#gallery'), 1300); });
+        $('#faq').click(function() { $.scrollTo($('#faqu'), 1300); });
         $('#kontakt').click(function() { $.scrollTo($('#contact'), 1500); });
         $('.scrollup').click(function() { $.scrollTo($('body'), 1700); });
         
@@ -330,6 +383,25 @@
 </script>
 
 <script src="assets/js/lazysizes.min.js" async></script>
+
+<!-- faq -->
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+    </script>
 
 </body>
 
